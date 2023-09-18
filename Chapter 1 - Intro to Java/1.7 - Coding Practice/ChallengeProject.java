@@ -39,148 +39,148 @@ public class ChallengeProject {
 
     public static void MainLoop() {
         int i=0;
-            while (i <= 2) {
-                Ears();
-                System.out.println("       () ( '  o  ')___");
-                System.out.println("        \\\\|__)   ______)");
-                LegsAndFeet();
-                endFrame(100);
+        while (i <= 2) {
+            Ears();
+            System.out.println("       () ( '  o  ')___");
+            System.out.println("        \\\\|__)   ______)");
+            LegsAndFeet();
+            endFrame(100);
 
-                Ears();
-                System.out.println("       () ( '  o  ')___");
-                System.out.println("        \\\\|___)   _____)");
-                LegsAndFeet();
-                endFrame(50);
+            Ears();
+            System.out.println("       () ( '  o  ')___");
+            System.out.println("        \\\\|___)   _____)");
+            LegsAndFeet();
+            endFrame(50);
 
-                Ears();
-                System.out.println("       () ( '  o  ')__");
-                System.out.println("        \\\\|____)   ___)");
-                LegsAndFeet();
-                endFrame(50);
+            Ears();
+            System.out.println("       () ( '  o  ')__");
+            System.out.println("        \\\\|____)   ___)");
+            LegsAndFeet();
+            endFrame(50);
 
-                Ears();
-                System.out.println("       () ( '  o  ')__");
-                System.out.println("        \\\\|____)   ___)");
-                LegsAndFeet();
-                endFrame(50);
+            Ears();
+            System.out.println("       () ( '  o  ')__");
+            System.out.println("        \\\\|____)   ___)");
+            LegsAndFeet();
+            endFrame(50);
 
-                Ears();
-                System.out.println("       () ( '  o  ')");
-                System.out.println("        \\\\|______)  _)");
-                LegsAndFeet();
-                endFrame(50);
+            Ears();
+            System.out.println("       () ( '  o  ')");
+            System.out.println("        \\\\|______)  _)");
+            LegsAndFeet();
+            endFrame(50);
 
-                Ears();
-                System.out.println("       () ( '  o  ')");
-                System.out.println("        \\\\ |______)  _)");
-                LegsAndFeet();
-                endFrame(50); 
+            Ears();
+            System.out.println("       () ( '  o  ')");
+            System.out.println("        \\\\ |______)  _)");
+            LegsAndFeet();
+            endFrame(50); 
 
-                Ears();
-                System.out.println("       () ( '  o  ')");
-                System.out.println("        \\\\ |_______) )");
-                LegsAndFeet();
-                endFrame(50);
-                
-                Ears();
-                System.out.println("       () ( '  o  ')");
-                System.out.println("        \\\\|__________)");
-                LegsAndFeet();
-                endFrame(50);
+            Ears();
+            System.out.println("       () ( '  o  ')");
+            System.out.println("        \\\\ |_______) )");
+            LegsAndFeet();
+            endFrame(50);
+            
+            Ears();
+            System.out.println("       () ( '  o  ')");
+            System.out.println("        \\\\|__________)");
+            LegsAndFeet();
+            endFrame(50);
 
-                Ears();
-                System.out.println("       () ( '  o  ')_");
-                System.out.println("        \\\\|__________)");
-                LegsAndFeet();
-                endFrame(50);
+            Ears();
+            System.out.println("       () ( '  o  ')_");
+            System.out.println("        \\\\|__________)");
+            LegsAndFeet();
+            endFrame(50);
 
-                Ears();
-                System.out.println("       () ( '  o  ')__");
-                System.out.println("        \\\\|___________)");
-                LegsAndFeet();
-                endFrame(50);
+            Ears();
+            System.out.println("       () ( '  o  ')__");
+            System.out.println("        \\\\|___________)");
+            LegsAndFeet();
+            endFrame(50);
 
-                Ears();
-                System.out.println("       () ( '  o  ') __");
-                System.out.println("        \\\\|____________)");
-                LegsAndFeet();
-                endFrame(50);
+            Ears();
+            System.out.println("       () ( '  o  ') __");
+            System.out.println("        \\\\|____________)");
+            LegsAndFeet();
+            endFrame(50);
 
-                Ears();
-                System.out.println("       () ( '  o  ') __");
-                System.out.println("        \\\\|____________)");
-                LegsAndFeet();
-                endFrame(50);
+            Ears();
+            System.out.println("       () ( '  o  ') __");
+            System.out.println("        \\\\|____________)");
+            LegsAndFeet();
+            endFrame(50);
 
-                Ears();
-                System.out.println("       () ( '  o  ') ___");
-                System.out.println("        \\\\|   __________)");
-                LegsAndFeet();
-                endFrame(50);
+            Ears();
+            System.out.println("       () ( '  o  ') ___");
+            System.out.println("        \\\\|   __________)");
+            LegsAndFeet();
+            endFrame(50);
 
-                Ears();
-                System.out.println("       () ( '  o  ') __");
-                System.out.println("        \\\\|  __________)");
-                LegsAndFeet();
-                endFrame(50);
+            Ears();
+            System.out.println("       () ( '  o  ') __");
+            System.out.println("        \\\\|  __________)");
+            LegsAndFeet();
+            endFrame(50);
 
-                Ears();
-                System.out.println("       () ( '  o  ') __");
-                System.out.println("        \\\\|____________)");
-                LegsAndFeet();
-                endFrame(50);
+            Ears();
+            System.out.println("       () ( '  o  ') __");
+            System.out.println("        \\\\|____________)");
+            LegsAndFeet();
+            endFrame(50);
 
-                Ears();
-                System.out.println("       () ( '  o  ') _");
-                System.out.println("        \\\\|___________)");
-                LegsAndFeet();
-                endFrame(50);
+            Ears();
+            System.out.println("       () ( '  o  ') _");
+            System.out.println("        \\\\|___________)");
+            LegsAndFeet();
+            endFrame(50);
 
-                Ears();
-                System.out.println("       () ( '  o  ')");
-                System.out.println("        \\\\|__________)");
-                LegsAndFeet();
-                endFrame(50);
+            Ears();
+            System.out.println("       () ( '  o  ')");
+            System.out.println("        \\\\|__________)");
+            LegsAndFeet();
+            endFrame(50);
 
-                Ears();
-                System.out.println("       () ( '  o  ')");
-                System.out.println("        \\\\|__________)");
-                LegsAndFeet();
-                endFrame(50);
+            Ears();
+            System.out.println("       () ( '  o  ')");
+            System.out.println("        \\\\|__________)");
+            LegsAndFeet();
+            endFrame(50);
 
-                Ears();
-                System.out.println("       () ( '  o  ')");
-                System.out.println("        \\\\|_______) )");
-                LegsAndFeet();
-                endFrame(50);
+            Ears();
+            System.out.println("       () ( '  o  ')");
+            System.out.println("        \\\\|_______) )");
+            LegsAndFeet();
+            endFrame(50);
 
-                Ears();
-                System.out.println("       () ( '  o  ')");
-                System.out.println("        \\\\|______)  _)");
-                LegsAndFeet();
-                endFrame(50);
+            Ears();
+            System.out.println("       () ( '  o  ')");
+            System.out.println("        \\\\|______)  _)");
+            LegsAndFeet();
+            endFrame(50);
 
-                Ears();
-                System.out.println("       () ( '  o  ')__");
-                System.out.println("        \\\\|____)   ___)");
-                LegsAndFeet();
-                endFrame(50);
+            Ears();
+            System.out.println("       () ( '  o  ')__");
+            System.out.println("        \\\\|____)   ___)");
+            LegsAndFeet();
+            endFrame(50);
 
-                Ears();
-                System.out.println("       () ( '  o  ')___");
-                System.out.println("        \\|___)   _____)");
-                LegsAndFeet();
-                endFrame(50);
+            Ears();
+            System.out.println("       () ( '  o  ')___");
+            System.out.println("        \\|___)   _____)");
+            LegsAndFeet();
+            endFrame(50);
 
-                Ears();
-                System.out.println("       () ( '  o  ')___");
-                System.out.println("        \\|__)   ______)");
-                LegsAndFeet();
-                endFrame(50);
+            Ears();
+            System.out.println("       () ( '  o  ')___");
+            System.out.println("        \\|__)   ______)");
+            LegsAndFeet();
+            endFrame(50);
 
-                i++;
+            i++;
 
-            }
+        }
     }
 
 
