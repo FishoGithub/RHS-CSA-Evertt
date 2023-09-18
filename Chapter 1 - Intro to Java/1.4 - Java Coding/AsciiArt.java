@@ -1,4 +1,4 @@
-public class Art {
+public class AsciiArt {
     /* List of all requested art...
         Fish: ><(((('>
         Cat: =^..^=
@@ -33,7 +33,7 @@ public class Art {
                         ``````
      */
     
-    public AsciiArt() {
+    public void AsciiArt() {
     }
 
     // Functions to print out requested art
@@ -45,6 +45,52 @@ public class Art {
     }
     public void printRose() {
         // TODO - YOUR CODE GOES HERE
+        System.out.println("--------{---(@");
     }
     // TODO - YOUR FUNCTIONS GOES HERE
+    public void printWorm() {
+        System.out.println("_/\\__/\\__0>");
+    }
+    
+    public void Message() {
+        System.out.println("(¯`·._.·(¯`·._.· 9/11 ·._.·´¯)·._.·´¯)");
+    }
+
+    public void Caterpillar() {
+        System.out.println(",/\\,/\\,/\\,/\\,/\\,/\\,o");
+    }
+
+    public void Professor() {
+        System.out.println("\"\"⌐(ಠ۾ಠ)¬\"\"");
+    }
+
+    public void IDK() {
+        System.out.println("¯\\_(ツ)_/¯ ");
+    }
+
+    public void Mickey() {
+        System.out.println("                                 _____");
+        System.out.println("                             .d88888888bo.");
+        System.out.println("                            .d8888888888888b.");
+        System.out.println("                            8888888888888888b");
+        System.out.println("                            888888888888888888");
+        System.out.println("                            888888888888888888");
+        System.out.println("                            Y8888888888888888");
+        System.out.println("                       ,od888888888888888888P");
+        System.out.println("                    .'`Y8P'```'Y8888888888P'");
+        System.out.println("                  .'_   `  _     'Y88888888b");
+        System.out.println("                 /  _`    _ `      Y88888888b   ____");
+        System.out.println("             _  | /  \\  /  \\      8888888888.d888888b.");
+        System.out.println("            8888_\\ \\_|/  \\_|/      d888888888888888888888b");
+        System.out.println("            8888_\\ \\_|/  \\_|/      d888888888888888888888b");
+        System.out.println("              .Y8P  `'-.            d88888888888888888888888");
+        System.out.println("            /          `          `      `Y8888888888888888");
+        System.out.println("            |                        __    888888888888888P");
+        System.out.println("            \\                       / `   dPY8888888888P'");
+        System.out.println("            '._                  .'     .'  `Y888888P`");
+        System.out.println("                `\"'-.,__    ___.-''    .-'");
+        System.out.println("                    `-._````  __..--'`");
+        System.out.println("                        ``````");
+
+    }
 }
