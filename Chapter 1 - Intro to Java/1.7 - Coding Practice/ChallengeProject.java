@@ -4,6 +4,7 @@ public class ChallengeProject {
     public static void main(String[] args) {
         System.out.print("\033[33m"); // Yellow
         MainLoop();
+
             
         resetColor();
     }
@@ -38,8 +39,21 @@ public class ChallengeProject {
     }
 
     public static void MainLoop() {
+        catAnimation();
+
+        System.out.println("");
+    }
+
+    public static void carAnimation() {
+        System.out.println("             _/\\______\\\\__");
+        System.out.println("            / ,-. -|-  ,-.`-.");
+        System.out.println("            `( o )----( o )-'");
+    }
+
+    public static void catAnimation() {
         int i=0;
         while (i <= 2) {
+
             Ears();
             System.out.println("       () ( '  o  ')___");
             System.out.println("        \\\\|__)   ______)");
@@ -182,7 +196,6 @@ public class ChallengeProject {
 
         }
     }
-
 
     public static void test1(String[] args) {
         System.out.print("\033[33m"); // Yellow

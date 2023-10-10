@@ -1,5 +1,6 @@
 
 public class BreakoutChallenge {
+    
     /* Challenge Goal
      *  In this challenge, you are implementing part of a break-out style game.
      * If you are not familiar with this type of game, check out this wiki page (and a youtube video)...
@@ -26,6 +27,19 @@ public class BreakoutChallenge {
     private static Simulation sim = new Simulation();
 
     public static void main(String[] args) {
+        int i = 0;
+        for (i=0; i<=sim.GRID_WIDTH; i++) {
+            System.out.print("_");
+        for (i=0; i<=sim.GRID_HEIGHT; i++) {
+            System.out.println("|");
+        }
+
+         }
+        // while (sim.isGameActive() == true) {
+        //     sim.Simulation();
+        // }
+
+
         /* TODO
          * Replace this with your code. You can create your own methods in this class, but do not modify
          *  the other files for the main part of this challenge (note that if/when you get to the additional 
