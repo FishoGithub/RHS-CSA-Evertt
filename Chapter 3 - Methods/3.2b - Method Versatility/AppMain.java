@@ -1,32 +1,33 @@
-
+import java.util.Random;
 
 public class AppMain {
     public static void main(String[] args) {
         // Line 1
         // TODO
+        for (int i = 0; i <=5; i++) {
+            ReturnValue(100);
+        }
 
+        System.out.println();
 
-        // Line 2
-        // TODO
-        returnValue(0, 100);
+        for (int i = 0; i <= 4; i++) {
+            ReturnValue(100, 500);
+        }
+
     }
 
-    public static int returnValue(double min, double max) {
-        return (int) ((int) (Math.random() * (max-min)) +min);
-    }
-    
-    public static int returnValue(int x, int y) {
-        double RandomNumber = Math.random();
-        int ConvertedNumber = (int) RandomNumber;
-        System.out.println(ConvertedNumber);
+    public static int ReturnValue(double firstValue) {
+        int returnedNumber = (int) (100* Math.random());
+        System.out.print(returnedNumber + " ");
+        return (int) ((int) Math.random() * (firstValue));
 
-        return ConvertedNumber;
     }
 
-
-    // Put your functions here...
-    // Function 1 should: should return a value less than a maximum provided value: [0,𝑚𝑎𝑥𝑉𝑎𝑙𝑢𝑒).
-    // Function 2 should: should return a value between two provided doubles: [𝑚𝑖𝑛𝑉𝑎𝑙𝑢𝑒,𝑚𝑎𝑥𝑉𝑎𝑙𝑢𝑒).
+    public static int ReturnValue(int min, int max) {
+        int randomNumber = (int) (Math.random() * (max-min) +min);
+        System.out.print(randomNumber + " ");
+        return randomNumber;
+    }
 }
 
 

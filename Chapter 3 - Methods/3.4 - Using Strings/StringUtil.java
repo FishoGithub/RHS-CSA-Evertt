@@ -1,3 +1,5 @@
+import javax.sound.midi.SysexMessage;
+
 public class StringUtil {
     public static String firstHalf(String input) {
         // Returns a string containing the first half of 'input'
@@ -6,6 +8,12 @@ public class StringUtil {
         // 
         // Requirements...
         //  - Use a loop to build the return string.
+
+        String myString = "abcdef";
+        int stringLength = (int) myString.length();
+        for (int i = 0; i <= stringLength; i++ ) {
+            System.out.println(myString);
+        }
 
         return input;
     }
