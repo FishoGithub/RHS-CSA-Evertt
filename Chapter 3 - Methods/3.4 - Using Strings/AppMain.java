@@ -17,8 +17,9 @@ public class AppMain {
         System.out.println("'" + StringUtil.swapAtSpace("abc def") + "'");
         System.out.println("'" + StringUtil.swapAtSpace("this is a test") + "'");
 
-        System.out.println("---- firstNonRepeatedChar ---");
-        System.out.println("'" + StringUtil.firstNonRepeatedChar("aabbcddefg") + "'");
-        System.out.println("'" + StringUtil.firstNonRepeatedChar("abcabcdef") + "'");
+        // System.out.println("---- firstNonRepeatedChar ---");
+        // System.out.println("'" + StringUtil.firstNonRepeatedChar("aabbcddefg") +
+        // "'");
+        // System.out.println("'" + StringUtil.firstNonRepeatedChar("abcabcdef") + "'");
     }
 }

@@ -2,57 +2,51 @@ import javax.sound.midi.SysexMessage;
 
 public class StringUtil {
     public static String firstHalf(String input) {
-        // Returns a string containing the first half of 'input'
-        // In the case of an odd number of characters, the extra goes in the second half (excluded here)
-        //  Example: "0123456789" -> "01234"
-        // 
-        // Requirements...
-        //  - Use a loop to build the return string.
+        int StringLength = input.length();
+        String NewString = "";
 
-        String myString = "abcdef";
-        int stringLength = (int) myString.length();
-        for (int i = 0; i <= stringLength; i++ ) {
-            System.out.println(myString);
+        for (int i = 0; i <= StringLength / 2; i++) {
+            NewString += input.charAt(i);
         }
 
-        return input;
+        return NewString;
     }
 
     public static String beforeSpace(String input) {
-        // Returns a string containing the portion of the string BEFORE the space
-        // In the case of no space, the full string should be returned
-        //  Example: "abcd ef" -> "abcd"
-        // 
-        // Requirements...
-        //  - Use the string function substring.
+        int indexOfString = input.indexOf(" ");
+        int from = 0;
+        String NewString = "";
 
-        return input;
+        for (int i = 0; i < indexOfString; i++) {
+            NewString = input.substring(from, indexOfString);
+        }
+
+        return NewString;
     }
 
     public static String afterSpace(String input) {
-        // Returns a string containing the portion of the string AFTER the space
-        // In the case of no space, an empty string should be returned
-        //  Example: "abcd ef" -> "ef"
-        // 
-        // Requirements...
-        //  - Use the string function substring.
+        int indexOfString = input.indexOf(" ");
+        int StringLength = input.length();
+        String NewString = "";
 
-        return input;
+        for (int i = indexOfString; i < StringLength; i++) {
+            NewString = input.substring(indexOfString, StringLength);
+        }
+
+        return NewString;
     }
 
     public static String swapAtSpace(String input) {
-        // Returns a string that swaps the section before and after the space
-        //  Example: "abcd ef" -> "ef abcd"
-        // 
-        // Requirements...
-        //  - The other functions you created for this.
+        String FirstHalf = afterSpace(input);
+        String SecondHalf = beforeSpace(input);
 
-        return input;
+        return FirstHalf + SecondHalf;
     }
 
     public static char firstNonRepeatedChar(String input) {
-        // Returns the first character that is not repeated later in the string (looking left to right)
-        //  Example: "abcabcdef" -> 'd'
+        // Returns the first character that is not repeated later in the string (looking
+        // left to right)
+        // Example: "abcabcdef" -> 'd'
 
         return input.charAt(0);
     }
