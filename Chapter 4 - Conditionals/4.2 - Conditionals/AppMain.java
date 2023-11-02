@@ -3,6 +3,7 @@ public class AppMain {
 
     public static void main(String[] args) {
         System.out.println("-------- firstStars --------");
+        Conditionals.firstStars("abcd");
         // add your test cases here
 
         System.out.println("------ compareDouble -------");
