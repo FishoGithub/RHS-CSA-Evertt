@@ -1,16 +1,15 @@
 public class Cumulative {
+    final String ALPHABET = "abcdefghijklmnopqrstuvwxyz";
     public String alphabet(char first, int count) {
-        // Return a String consiting of a section of the alphabet.
-        //  It should start with letter 'first' and contain 'count' letters.
-        //  If count goes past 'z', then it should wrap back around to 'a' 
-        //    for the next letter.
-        //  You can assume that first is a lowercase letter.
-        
-        // Examples...
-        //  alphabet('a', 5) -> "abcde"
-        //  alphabet('c', 4) -> "cdef"
-        //  alphabet('y', 6) -> "yzabcd"
-        return "abc...";
+        String returnString = "";
+        for (int i = ALPHABET.indexOf(first); i < ALPHABET.indexOf(first) + count; i++) {
+            if (ALPHABET.charAt(i) == 'z') {
+                i = 0; 
+            }
+            returnString = returnString + ALPHABET.charAt(i);
+        }
+        System.out.println(returnString);
+        return returnString;
     }
 
     public int factorSum(int n) {
@@ -33,3 +32,16 @@ public class Cumulative {
         return false;
     }
 }
+
+
+        // Return a String consiting of a section of the alphabet.
+        //  It should start with letter 'first' and contain 'count' letters.
+        //  If count goes past 'z', then it should wrap back around to 'a' 
+        //    for the next letter.
+        //  You can assume that first is a lowercase letter.
+        
+        // Examples...
+        //  alphabet('a', 5) -> "abcde"
+        //  alphabet('c', 4) -> "cdef"
+        //  alphabet('y', 6) -> "yzabcd"
+
