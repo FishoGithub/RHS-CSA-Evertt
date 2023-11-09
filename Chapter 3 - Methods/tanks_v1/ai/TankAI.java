@@ -1,28 +1,72 @@
 package ai;
 
+import game.PowerUp;
 import game.Tank;
 import game.TankAIBase;
 import game.Vec2;
+import java.lang.Math;
+
+import org.omg.CORBA.PolicyError;
 
 public class TankAI extends TankAIBase {
 
     public String getPlayerName() {
-        return "<Your Name>";  // <---- Put your first name here
+        return "<Mihir>"; 
     }
     public int getPlayerPeriod() {
-        return -1;
+        return 1;
+    }
+
+    // public final PowerUp POWER_UP_1 = this.getPowerUps()[1];
+    // public final PowerUp POWER_UP_2 = this.getPowerUps()[2];
+
+    public void getClosestPowerupToTank(PowerUp firstPowerUp, PowerUp secondPowerUp, Tank tank) {
+            
+        double PowerUp1PositionX = firstPowerUp.getPos().x;
+        double PowerUp1PositionY = firstPowerUp.getPos().y;
+        double PowerUp2PositionX = secondPowerUp.getPos().x;
+        double PowerUp2PositionY = secondPowerUp.getPos().y;
+
+        double calculatedXPos = Math.abs(PowerUp1PositionX - PowerUp2PositionX);
+        double calculatedYPos = Math.abs(PowerUp1PositionY - PowerUp2PositionY); 
+
+        if (calculatedXPos < firstPowerUp.getPos().x && calculatedYPos < firstPowerUp.getPos().y) {
+            queueCmd("move", new Vec2 (firstPowerUp.getPos().x - tank.getPos().x, 0)); 
+            queueCmd("move", new Vec2 (0, firstPowerUp.getPos().y - tank.getPos().y)); 
+
+        } else if (calculatedXPos < secondPowerUp.getPos().x && calculatedYPos < secondPowerUp.getPos().y) {
+            queueCmd("move", new Vec2 (secondPowerUp.getPos().x - tank.getPos().x, 0)); 
+            queueCmd("move", new Vec2 (0, secondPowerUp.getPos().y - tank.getPos().y)); 
+        }
+    }   
+
+    private PowerUp getClosestPowerUp() {
+        PowerUp minimum = null; 
+        for (PowerUp powerUp : getPowerUps()) {
+            if (minimum == null || Vec2.distance(getTankPos(), minimum.getPos()) > Vec2.distance(getTankPos(), powerUp.getPos())) {
+                minimum = powerUp; 
+            }
+        }
+        return minimum; 
+    }
+
+    private void MoveTank(Vec2 vec2) {
+        if (vec2.x != getTankPos().x) {
+            queueCmd("move", new Vec2(vec2.x - getTankPos().x, 0));
+        }
+        if (vec2.x != getTankPos().y) {
+            queueCmd("move", new Vec2(0, vec2.y - getTankPos().y));
+        }
+    }
+
+    public void FallbackFunction(PowerUp POWERUP) {
+        queueCmd("move", new Vec2(POWERUP.getPos().x - tank.getPos().x, 0));
+        queueCmd("move", new Vec2(0, POWERUP.getPos().y - tank.getPos().y));
     }
         
-    // You are free to add member variables & methods to this class (and delete this comment).
-    //  You should use the methods in its base class (TankAIBase) to query the world. 
-    //  Note that you are not allowed to reach into game code directly or make any
-    //  modifications to code in the game package. Use your judgement and ask your 
-    //  teacher if you are not sure. If it feels like cheating, it probably is.
-
     public boolean updateAI() {
-
-        // TODO: Your code goes here
-
+        PowerUp powerUp = getClosestPowerUp(); 
+        MoveTank(powerUp.getPos());
         return true;
     }
 }
