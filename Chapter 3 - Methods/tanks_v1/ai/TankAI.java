@@ -23,7 +23,7 @@ public class TankAI extends TankAIBase {
     public void getClosestPowerupToTank(PowerUp firstPowerUp, PowerUp secondPowerUp, Tank tank) {
             
         double PowerUp1PositionX = firstPowerUp.getPos().x;
-        double PowerUp1PositionY = firstPowerUp.getPos().y;
+        double PowerUp1PositionY = firstPowerUp.getPos().y; 
         double PowerUp2PositionX = secondPowerUp.getPos().x;
         double PowerUp2PositionY = secondPowerUp.getPos().y;
 
@@ -41,13 +41,14 @@ public class TankAI extends TankAIBase {
     }   
 
     private PowerUp getClosestPowerUp() {
-        PowerUp minimum = null; 
+        PowerUp minimumDistance = null; 
         for (PowerUp powerUp : getPowerUps()) {
-            if (minimum == null || Vec2.distance(getTankPos(), minimum.getPos()) > Vec2.distance(getTankPos(), powerUp.getPos())) {
-                minimum = powerUp; 
+            if (minimumDistance == null || Vec2.distance(getTankPos(), minimumDistance.getPos()) 
+            > Vec2.distance(getTankPos(), powerUp.getPos())) {
+                minimumDistance = powerUp; 
             }
         }
-        return minimum; 
+        return minimumDistance; 
     }
 
     private void MoveTank(Vec2 vec2) {
@@ -59,6 +60,10 @@ public class TankAI extends TankAIBase {
         }
     }
 
+    private void MoveAwayFromTank() {
+
+    }
+
     public void FallbackFunction(PowerUp POWERUP) {
         queueCmd("move", new Vec2(POWERUP.getPos().x - tank.getPos().x, 0));
         queueCmd("move", new Vec2(0, POWERUP.getPos().y - tank.getPos().y));
@@ -68,5 +73,6 @@ public class TankAI extends TankAIBase {
         PowerUp powerUp = getClosestPowerUp(); 
         MoveTank(powerUp.getPos());
         return true;
+
     }
 }
